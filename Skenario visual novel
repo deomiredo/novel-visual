@@ -7,7 +7,7 @@
 //opsi 1 dengan menggunakan tema kuliah online
 
 *point pertama tentang keadaan kampus yang baik baik saja, sampai ada kasus impor covid di malang.
-*mahasiswa diharuskan untuk melakkan pembelajaran secara daring dari rumah atau kos masing masing.
+*mahasiswa diharuskan untuk melakukan pembelajaran secara daring dari rumah atau kos masing masing.
 
 //visual novel dimulai dari saat pembelajaran daring dimulai,
 
@@ -17,8 +17,29 @@
 
 {1}     jika mahasiswa memilih untuk jujur sesuai kemampuannya, maka akan dilanjutkan sebagai berikut
 
-//
-*
+    //mahasiswa mulai dihadapkan dengan persoalan A, B, dan C
+  
+    **A**   mahasiswa dihadapkan pilihan antara {x} melakukan pembelajaran sendiri dari semua sumber atau {y} bertanya pada dosen
+    
+          {x}     jika mahasiswa melakukan pembelajaran sendiri dari semua sumber, maka akan dilanjutkan sebagai berikut
+    
+                //mahasiswa mampu menampung dari berbagai sumber,
+                
+                *mahasiswa dihadapkan pilihan antara {xx} mencocokkan apa yang didapat dengan dalam modul atau {yy} mahasiswa berdiskusi dengan teman
+                
+                      {x1} jika mahasiswa mencocokkan apa yang didapat dengan yang berada dalam modul
+                            // mahasiswa mengerti. akhir dari persoalan.
+                            
+                      {x2} jika mahasiswa berdiskusi dengan teman yang lain, 
+                            //kemungkinan materi akan mengerucut sehingga akan faham dengan sendirinya
+                            
+    
+          {y}     jika mahasiswa bertanya pada dosen, maka akan dilanjutkan sebagai berikut
+    
+                //jawaban dosen akan diterima oleh mahasiswa antara 2 bagian, {y1} dapat dimengerti dan {y2} kurang dapat dimengerti
+                
+                *penjelasan dosen {y1} dapat dimengerti dan {y2} kurang dapat dimengerti
+                
 
 {2}     jika mahasiswa memilih untuk Mencontek, maka akan dilanjutkan sebagai berikut
 
