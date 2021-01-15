@@ -3,3 +3,25 @@
 //dengan memilih sebuah tema dalam kehidupan kampus
 //ending yang akan berbeda sesuai dengan pilihan (visual novel)
 
+
+//opsi 1 dengan menggunakan tema kuliah online
+
+*point pertama tentang keadaan kampus yang baik baik saja, sampai ada kasus impor covid di malang.
+*mahasiswa diharuskan untuk melakkan pembelajaran secara daring dari rumah atau kos masing masing.
+
+//visual novel dimulai dari saat pembelajaran daring dimulai,
+
+*diumpamakan mahasiswa sudah mampu untuk melakukan pembelajaran secara daring
+*hal pertama yang harus ditentukan oleh mahasiswa adalah tentang cara mereka melalui pembelajaran daring, 
+*apakah mahasiswa memilih untuk {1} mengerjakan jujur sesuai dengan kemampuannya atau {2} melalui pembelajaran daring dengan cara "mencontek"
+
+{1}     jika mahasiswa memilih untuk jujur sesuai kemampuannya, maka akan dilanjutkan sebagai berikut
+
+//
+*
+
+{2}     jika mahasiswa memilih untuk Mencontek, maka akan dilanjutkan sebagai berikut
+
+//
+*
+
