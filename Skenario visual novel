@@ -19,11 +19,11 @@
 
     //mahasiswa mulai dihadapkan dengan persoalan A, B, dan C
   
-    **A**   mahasiswa dihadapkan pilihan antara {x} melakukan pembelajaran sendiri dari semua sumber atau {y} bertanya pada dosen
+    **A**   mahasiswa dihadapkan pilihan antara {x} melakukan pembelajaran sendiri dari internet atau {y} bertanya pada dosen
     
-          {x}     jika mahasiswa melakukan pembelajaran sendiri dari semua sumber, maka akan dilanjutkan sebagai berikut
+          {x}     jika mahasiswa melakukan pembelajaran sendiri dari internet, maka akan dilanjutkan sebagai berikut
     
-                //mahasiswa mampu menampung dari berbagai sumber,
+                //mahasiswa mampu menampung dari internet,
                 
                 *mahasiswa dihadapkan pilihan antara {xx} mencocokkan apa yang didapat dengan dalam modul atau {yy} mahasiswa berdiskusi dengan teman
                 
@@ -39,8 +39,33 @@
                 //jawaban dosen akan diterima oleh mahasiswa antara 2 bagian, {y1} dapat dimengerti dan {y2} kurang dapat dimengerti
                 
                 *penjelasan dosen {y1} dapat dimengerti dan {y2} kurang dapat dimengerti
+                       {y1} jika mahasiswa dapat mengerti, maka tidak ada yang dipermasalahkan lagi dan melanjutkan ke persoalan **B**
+                       
+                                // akhir dari persoalan
+                       
+                       y{2} jika penjelasan kurang dapat dimengerti, maka mahasiswa dihadapkan pada pilihan:
+                       
+                                * mahasiswa dihadapkan pada pilihan untuk {y2a} ingin memahami materi secara utuh  atau {y2b} tidak melanjutkan pemahaman materi
+                                
+                                {y2a} jika mahasiswa ingin memahami materi secara utuh, maka 
+                                
+                                            *mahasiswa memilih antara {y2a-1} memahami dari internet atau {y2a-2} berdiskusi dengan teman
+                                            
+                                            {y2a-1} jika mahasiswa memilih memahami dari internet, maka akan dilanjutkan ke dalam poin {x} pada permasalahan **A**
+                                                    // ada link ke poin {x} permasalahan **A**
+                                                    
+                                            {y2a-2} jika mahasiswa memilih untuk berdiskusi dengan teman, maka akan dilanjutkan ke dalam poin {x2} pada permasalahan **A**
+                                                    // ada link ke poin {x2} permasalahan **A**
+                                            
                 
-
+                
+    **B**
+    
+    
+    
+    
+    
+    
 {2}     jika mahasiswa memilih untuk Mencontek, maka akan dilanjutkan sebagai berikut
 
 //
