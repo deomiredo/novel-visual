@@ -59,8 +59,18 @@
                                             
                 
          // pembelajaran daring berlangsung cukup lama sehingga membuat mahasiswa cenderung malas dan bosan
-    **B**   mahasiswa dihadapkan pilihan antara 
-    
+    **B**   mahasiswa dihadapkan pilihan antara {x} melawan rasa malas atau {y} kuliah dengan bermalas malasan
+          {x} mahasiswa memilih untuk melawan rasa malas maka:
+                *mahasiswa akan melawan rasa malas tersebut dengan {xa} UKM untuk refreshing atau {xb} mencari beberapa motivasi
+                
+                {xa} jika mahasiswa mengikuti UKM untuk refreshing
+                
+                {xb} jika mahasiswa mencari beberapa motivasi, maka bisa diasumsikan bisa melalui Tuhan atau keagamaan, melalui orangtua, ataupun melalui masa depan, sehingga 
+                   //mahasiswa diasumsikan mampu melawan rasa malas, sehingga mahasiswa tidak meng
+          
+          {y} mahasiswa memilih untuk bermalas malasan, 
+            //maka diasumsikan mahasiswa tidak merasa terbebani, dan saat ada tugas, akhirnya mahasiswa terdesak untuk mengerjakan secara instan, yaitu secara mencontek
+            // ada link ke poin {2} jika mahasiswa memilih untuk mencontek
     
     
     
