@@ -3,7 +3,6 @@
 //dengan memilih sebuah tema dalam kehidupan kampus
 //ending yang akan berbeda sesuai dengan pilihan (visual novel)
 
-
 //opsi 1 dengan menggunakan tema kuliah online
 
 *point pertama tentang keadaan kampus yang baik baik saja, sampai ada kasus impor covid di malang.
@@ -63,14 +62,34 @@
           {x} mahasiswa memilih untuk melawan rasa malas maka:
                 *mahasiswa akan melawan rasa malas tersebut dengan {xa} UKM untuk refreshing atau {xb} mencari beberapa motivasi
                 
-                {xa} jika mahasiswa mengikuti UKM untuk refreshing
+                {xa} jika mahasiswa mengikuti UKM untuk refreshing, maka dihadapkan pilihan antara {xa1} melakukan sebatas refresh atau {xa2} menjadikan prioritas dan tidak menghiraukan kuliahnya
+                
+                        {xa1} jika mahasiswa melakukan hanya sebatas refresh, maka diasumsikan mahasiswa mampu membagi waktunya dan dapat bertahan untuk kuliah
+                                // permasalahan selesai
+                                
+                        {xa2} jika mahasiswa menjadikan UKM sebagai prioritasnya, maka akan terbengkalai kuliahnya dan durasi kuliah menjadi lama, bahkan drop out
+                                // selesai
                 
                 {xb} jika mahasiswa mencari beberapa motivasi, maka bisa diasumsikan bisa melalui Tuhan atau keagamaan, melalui orangtua, ataupun melalui masa depan, sehingga 
-                   //mahasiswa diasumsikan mampu melawan rasa malas, sehingga mahasiswa tidak meng
-          
+                   //mahasiswa diasumsikan mampu melawan rasa malas, sehingga mahasiswa dapat membagi mengatasi permasalahan yang ada
+                   
+                          
           {y} mahasiswa memilih untuk bermalas malasan, 
             //maka diasumsikan mahasiswa tidak merasa terbebani, dan saat ada tugas, akhirnya mahasiswa terdesak untuk mengerjakan secara instan, yaitu secara mencontek
             // ada link ke poin {2} jika mahasiswa memilih untuk mencontek
+    
+    
+    **C**mahasiswa dihadapkan pada persoalan terakhir, dengan kasus UJIAN. 
+         mahasiswa disuruh untuk memilih antara {x} mempelajari semua materi sesuai kisi kisi ujian atau {y} menunggu jawaban dari teman yang dipercaya untuk mendapatkan jawaban
+         {x} jika mahasiswa mempelajari semua materi sesuai kisi kisi ujian
+                // diasumsikan mahasiswa tengah menghadapi ujian
+                // mahasiswa sebelumnya telah menguasai materi sesuai kisi kisi
+                // mahasiswa mampu melalui ujian dengan kemampuannya sendiri berapapun hasil yang didapat
+          
+         {y} jika mahasiswa menunggu jawaban dari teman yang dipercaya,
+                // mahasiswa masih ragu untuk mengukur kemampuannya sendiri,
+                // meskipun dapat lulus dari mata kuliah, ia belum memiliki kepercayaan diri
+    
     
     
     
@@ -78,6 +97,8 @@
     
 {2}     jika mahasiswa memilih untuk Mencontek, maka akan dilanjutkan sebagai berikut
 
-//
-*
+        // pertama tama, mahasiswa  sudah bermalas malasan karena skenaro yang akan dibuatnya selama pembelajaran online adalah dengan menggantungkan kepada temannya
+        // mahasiswa mulai dihadapkan dengan persoalan A, B, dan C
+        *
 
+ 
