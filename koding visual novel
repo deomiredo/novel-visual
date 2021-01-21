@@ -1,2 +1,157 @@
 // koding untuk visual novel, 
 // sementara menggunakan bahasa pemrograman java
+
+// ini contoh koding dari web
+// link-nya 
+
+
+package textboxes;
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.net.URL;
+
+
+public class test extends Applet implements Runnable, KeyListener {
+
+private Image Image, Background;
+private Image actor1, actor2;
+private Image textbox;
+private Graphics graphics;
+private URL base;
+private static testbg bg;
+
+@Override
+public void init(){
+    setSize(960, 540);
+    setBackground(Color.LIGHT_GRAY);
+    setFocusable(true);
+    Frame frame = (Frame)this.getParent().getParent();
+    frame.setTitle("School Scene");
+    try{
+        base = getDocumentBase();
+    }catch(Exception e){};
+
+    //getImages from disk
+    Background = getImage(base, "res/background.jpg"); 
+    actor1 = getImage(base, "res/actor1.jpg");
+    actor2 = getImage(base, "res/actor2.jpg");
+    textbox = getImage(base, "res/textbox.jpg");
+}
+
+public test(){
+
+}
+
+@Override
+public void start(){
+    bg = new testbg();
+Thread thread = new Thread(this);
+thread.start();
+}
+@Override
+public void keyPressed(KeyEvent arg0) {
+    // TODO Auto-generated method stub
+
+}
+
+@Override
+public void keyReleased(KeyEvent arg0) {
+    // TODO Auto-generated method stub
+
+}
+
+@Override
+public void keyTyped(KeyEvent arg0) {
+    // TODO Auto-generated method stub
+
+}
+
+@Override
+public void run() {
+    bg.update();
+    repaint();
+    try{
+        Thread.sleep(17);
+    }catch(InterruptedException e){
+        e.printStackTrace();
+    }
+
+}
+
+@Override
+public void update(Graphics g){
+    if(Image == null){
+        Image = createImage(this.getWidth(), this.getHeight());
+        graphics = Image.getGraphics();
+    }
+
+    graphics.setColor(getBackground());
+    graphics.fillRect(0, 0, getWidth(), getHeight());
+    graphics.setColor(getForeground());
+    paint(graphics);
+
+    g.drawImage(Image, 0, 0, this);
+}
+
+@Override
+public void paint(Graphics g){
+    super.paint(g);
+
+g.drawImage(Background, bg.getBgX(), bg.getBgY(), this);
+g.drawImage(actor2, 40, 20, this);
+g.drawImage(textbox, 80, 350, this);
+}
+
+public static testbg getBg() {
+    return bg;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+package textboxes;
+
+public class testbg {
+
+private int bgX, bgY;
+
+public testbg(){
+    bgX = 0;
+    bgY = 0;
+}
+
+public void update(){
+
+}
+
+public int getBgX(){
+    return bgX;
+}
+
+public int getBgY(){
+    return bgY;
+}
+
+public void setBgX(int bgX) {
+    this.bgX = bgX;
+}
+
+public void setBgY(int bgY) {
+    this.bgY = bgY;
+}
+
+}
