@@ -1,2 +1,101 @@
 // koding untuk visual novel, 
 // sementara menggunakan bahasa pemrograman java
+
+
+// contoh sourcecode dari modul 6 BFS
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package strukdat.modul6;
+
+/**
+ *
+ * @author Yuser
+ */
+import java.util.*;
+
+public class BFS {
+
+    private int n;
+    private LinkedList<Integer> adjList[];
+    private Queue<Integer> q = new LinkedList();
+
+    public void buatGraph(int no) {
+        n = no + 1;
+        adjList = new LinkedList[n];
+
+        int i;
+
+        for (i = 1; i <= no; i++) {
+            adjList[i] = new LinkedList();
+        }
+    }
+
+    public void tambahGarisGraph(int u, int v) {
+        adjList[u].add(v);
+    }
+
+    public void BFtraversal(int v, boolean[] visited) {
+        q.add(v);
+        visited[v] = true;
+        int k;
+
+        while (!q.isEmpty()) {
+            k = q.remove();
+            System.out.print(k + " ");
+            Iterator<Integer> i = adjList[k].listIterator();
+            int j;
+
+            while (i.hasNext()) {
+
+                j = i.next();//9
+                if (visited[j] != true) {
+                    q.add(j);//1 9
+                    visited[j] = true;
+                }
+            }
+        }
+    }
+
+    public void BFsearch(int v) {
+        boolean visited[] = new boolean[n];
+
+        BFtraversal(v, visited);
+        for (int i = 1; i < n; i++) {
+            if (visited[i] != true) {
+                BFtraversal(i, visited);
+            }
+        }
+    }
+
+    public static void main(String args[]) {
+        BFS bfs = new BFS();
+        bfs.buatGraph(11);
+
+        bfs.tambahGarisGraph(1, 2);
+        bfs.tambahGarisGraph(1, 4);
+        bfs.tambahGarisGraph(2, 1);
+        bfs.tambahGarisGraph(2, 5);
+        bfs.tambahGarisGraph(4, 6);
+        bfs.tambahGarisGraph(5, 2);
+        bfs.tambahGarisGraph(5, 3);
+        bfs.tambahGarisGraph(5, 7);
+        bfs.tambahGarisGraph(5, 9);
+        bfs.tambahGarisGraph(6, 7);
+        bfs.tambahGarisGraph(7, 6);
+        bfs.tambahGarisGraph(7, 11);
+        bfs.tambahGarisGraph(8, 9);
+        bfs.tambahGarisGraph(8, 11);
+        bfs.tambahGarisGraph(9, 5);
+        bfs.tambahGarisGraph(9, 8);
+        bfs.tambahGarisGraph(11, 7);
+        bfs.tambahGarisGraph(11, 10);
+
+        System.out.println("BFS dari graph :");
+
+        bfs.BFsearch(2);
+    }
+}
