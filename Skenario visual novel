@@ -99,6 +99,43 @@
 
         // pertama tama, mahasiswa  sudah bermalas malasan karena skenaro yang akan dibuatnya selama pembelajaran online adalah dengan menggantungkan kepada temannya
         // mahasiswa mulai dihadapkan dengan persoalan A, B, dan C
-        *
-
+   **A** pada saat melakukan pembelajaran, mahasiswa harus menghadiri kelas dan dosen melakukan interaksi, 
+                * mahasiswa memilih untuk {x} tidak mendengarkan sama sekali atau {y} sedikit sedikit mendengarkan
+        
+                    {x} jika mahasiswa memilih untuk tidak mendengarkan sama sekali, maka mahasiswa diasumsikan memang tidak ingin ambil pusing dengan perkuliahan
+                    
  
+                    {y}jika mahasiswa memilih mendengarkan sedikit sedikit, kemungkinan mahasiswa akan memahami beberapa materi dari apa yang disampaikan dosen
+                    
+          
+          // pembelajaran daring berlangsung cukup lama sehingga membuat mahasiswa cenderung malas dan bosan
+    **B**   mahasiswa dihadapkan pilihan antara {x} kuliah dengan bermalas malasan atau {y} tidak memperhatikan kuliahnya
+    
+                {x} jika mahasiswa memilih untuk bermalas malasan, maka mahasiswa diasumsikan tidak menerima materi dengan baik
+                
+                {y} jika mahasiswa tidak memperhatikan kuliahnya, maka diasumsikan mahasiswa akan kuliah dalam waktu yang lama atau sampai Drop Out
+                    // ending
+                    
+                    
+                    
+     **C**mahasiswa dihadapkan pada persoalan terakhir, dengan kasus UJIAN. 
+         mahasiswa yang memilih untuk mencontek pada saat pilihan awal kuliah diasumsikan akan mencontek pada saat ujian sehingga kemungkinan yang ada adalah mahasiswa akan lulus mata kuliah dengan sedikit memahami materi kuliah, atau mahasiswa akan lulus dari mata kuliah dengan tidak adanya pemahaman tentang materi kuliah
+         
+         
+         
+         
+         ^^ENDING^^
+         
+         
+         1. mahasiswa akan lulus dengan percaya diri dan pemahaman materi jika mahasiswa memilih untuk kuliah online dengan jujur, mencari hiburan sebatas refresing / motifasi, dan mengerjakan ujian sesuai kemampuan
+         
+         2. mahasiswa akan lulus dengan tidak percaya diri dan pemahaman materi jika mahasiswa memilih untuk kuliah online dengan jujur, mencari hiburan sebatas refresing / motifasi, dan mengerjakan ujian dari jawaban teman 
+         
+         3. mahasiswa akan lulus dengan sedikit memahami materi jika mahasiswa memilih mencontek, tetapi mendengarkan dosen meski sedikit sedikit
+         
+         4. mahasiswa akan lulus dengan tidak memahami materi sama sekali jika mahasiswa memilih untuk kuliah dengan tidak mendengarkan materi, bermalas malasan dan mencontek saat ujian
+         
+         5. mahasiswa akan lama waktu kuliahnya dengan mengulang2 atau Drop Out jika mahasiswa memilih untuk memprioritaskan UKM (selain kuliah) atau mahasiswa tidak memperhatikan kuliahnya
+   
+   
+   //selesai
