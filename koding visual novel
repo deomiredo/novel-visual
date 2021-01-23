@@ -1,2 +1,91 @@
-// koding untuk visual novel, 
-// sementara menggunakan bahasa pemrograman java
+package pkg;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Kehidupan Kampus");
+        System.out.println("Tema : Kuliah Online");
+        System.out.println(); 
+        Scanner inp = new Scanner(System.in);
+        String nama;
+        System.out.print("Masukan Nama Pemain: ");
+                 nama = inp.next();
+        System.out.println();
+        System.out.println("Suatu ketika Mahasiswa terlihat melakukan aktivitas kampus pada umumnya");
+        System.out.println("Mereka berangkat ke Kampus, belajar di Kampus, dan banyak kegiatan Kampus yang mereka lakukan");
+        System.out.println("Hingga suatu ketika, datanglah pandemi virus corona yang mendunia");
+        System.out.println();
+        System.out.println("Karena adanya pandemi tersebut, physical distancing diberlakukan");
+        System.out.println("Mahasiswa terpaksa melakukan aktivats kampusnya secara daring dari rumah atau kos masing-masing");
+        System.out.println();
+        System.out.println(nama);
+        System.out.println("Wah gara-gara pandemi ini harus kuliah daring nih!!");
+        System.out.println();
+        System.out.println(nama);
+        System.out.println("Enaknya waktu kuliah daring nanti cara belajarku bagaimana ya...");
+        System.out.println();
+        int ops;
+        System.out.println("1. Mengerjakan jujur sesuai dengan kemampuan");
+        System.out.println("2. Mencontek");
+        
+            System.out.print("Pilih : ");
+            ops = Integer.parseInt(inp.next());
+            switch (ops) {
+                case 1:
+                    System.out.println();
+                    System.out.println(nama);
+                    System.out.println("Belajar dengan jujur sesuai kemampuan sajalah, agar sukses deh!");
+                    System.out.println();
+                    System.out.println(nama);
+                    System.out.println("Terus enaknya belajar dari internet atau dosen ya.. hmm");
+                    System.out.println();
+                    System.out.println("1. Belajar dari internet");
+                    System.out.println("2. Belajar dari dosen");
+                    System.out.println("Pilih : ");
+                    int x;
+                    x = Integer.parseInt(inp.next());
+                    switch (x) {
+                        case 1:
+                            System.out.println();
+                            System.out.println("Kamu mampu menampung pembelajaran dari internet");
+                            System.out.println();
+                            System.out.println(nama);
+                            System.out.println("Nah udah bisa belajar dari internet, lalu sekarang ...");
+                            System.out.println();
+                            System.out.println("1. Mencocokkan dengan modul");
+                            System.out.println("2. Berdiskusi dengan teman");
+                            System.out.println("Pilih : ");
+                            int x1;
+                            x1 = Integer.parseInt(inp.next());
+                            switch (x1) {
+                            case 1:
+                            System.out.println();
+                            System.out.println("Setelah kamu mencocokkan dengan modul");
+                            System.out.println();
+                            System.out.println(nama);
+                            System.out.println("oh sumber dari internet ini juga sama dengan yang di modul, mantap bisa dimengerti");
+                            break;
+                            case 2:
+                            System.out.println();
+                            System.out.println("Setelah kamu berdiskusi dengan teman");
+                            System.out.println();
+                            System.out.println(nama);
+                            System.out.println("oh jadi seperti itu ya teman-teman, bisa dipahami mantap");
+                            
+                            break;
+                            }
+                            break;
+                        case 2:
+                            System.out.println("Gpp");
+                            break;
+                    }
+                    break;
+                    
+                case 2:
+                    System.out.println("Hiyahiyahiya");
+                    break;
+                }
+
+}   
+
+}
