@@ -1,2 +1,42 @@
-// koding untuk visual novel, 
-// sementara menggunakan bahasa pemrograman java
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Kehidupan Kampus");
+        System.out.println("Tema : Kuliah Online");
+        System.out.println(); 
+        Scanner inp = new Scanner(System.in);
+        String nama;
+        System.out.print("Masukan Nama Pemain: ");
+                 nama = inp.next();
+        System.out.println();
+        System.out.println("Suatu ketika Mahasiswa terlihat melakukan aktivitas kampus pada umumnya");
+        System.out.println("Mereka berangkat ke Kampus, belajar di Kampus, dan banyak kegiatan Kampus yang mereka lakukan");
+        System.out.println("Hingga suatu ketika, datanglah pandemi virus corona yang mendunia");
+        System.out.println();
+        System.out.println("Karena adanya pandemi tersebut, physical distancing diberlakukan");
+        System.out.println("Mahasiswa terpaksa melakukan aktivats kampusnya secara daring dari rumah atau kos masing-masing");
+        System.out.println();
+        System.out.println(nama);
+        System.out.println("Wah gara-gara pandemi ini harus kuliah daring nih!!");
+        System.out.println();
+        System.out.println(nama);
+        System.out.println("Enaknya waktu kuliah daring nanti cara belajarku bagaimana ya...");
+        System.out.println();
+        int ops;
+        System.out.println("1. Mengerjakan jujur sesuai dengan kemampuan");
+        System.out.println("2. Mencontek");
+        
+            System.out.print("Pilih : ");
+            ops = Integer.parseInt(inp.next());
+            switch (ops) {
+                case 1:
+                    System.out.println("Mantap!!!");
+                    break;
+                case 2:
+                    System.out.println("wkwkwk");
+                    break;
+                }
+                    
+    }
+}
